@@ -10,7 +10,6 @@ function createGrid(cellSize) {
         x = cellSize;
     }
     for (let i = 0; i < x; i++) {
-
         let col = document.createElement("div");
 
         for (let j = 0; j < x; j++) {
@@ -18,11 +17,9 @@ function createGrid(cellSize) {
             let cell = document.createElement("div");
 
             //style cell
-            cell.style.width = "16px";
-            cell.style.height = "16px";
-            cell.style.maxWidth = "16px";
-            cell.style.maxHeight = "16px";
-
+            cell.style.width = (640 / x) + "px";
+            cell.style.height = (640 / x) + "px";
+            
             cell.style.margin = "0";
             cell.style.boxSizing = "border-box";
             cell.style.border = "1px solid black";
@@ -55,7 +52,7 @@ function resetGrid() {
         totalCells[i].remove();
         cells.splice(i, 1);
     }
-    let newSize = prompt("Input the amount of cells you want for the new grid");
+    let newSize = prompt("Input the grid size");
     createGrid(newSize);
 }
 

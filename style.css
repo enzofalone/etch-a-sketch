@@ -11,8 +11,9 @@ body {
 }
 #main {
     
-    max-width: 1024px;
-    max-height: 1024px;
+    width: 640px;
+    height: 640px;
+    border: 1px solid blue;
     margin: 3rem auto;
     overflow: hidden;
     display: flex;
