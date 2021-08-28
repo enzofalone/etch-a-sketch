@@ -10,10 +10,15 @@
 </head>
 
 <body>
-    <div id="input-container">
-        <button type="button" onclick="resetGrid()">RESET GRID</button>
+    <div id="logo-container">
+        <h1>Etch-a-Sketch</h1>
     </div>
-    <div id="main-container">
+    <div id="bottom-container">
+        <div id="input-container">
+            <button type="button" id="reset-grid-button" onclick="resetGrid()">RESET GRID</button><br>
+            <button type="button" id="random-color-button" onclick="switchRandom()">RANDOM COLORS</button>
+            <h1 id="grid-size-text"></h1>
+        </div>
         <div id="main">
 
         </div>
