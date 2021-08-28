@@ -6,12 +6,15 @@ body {
     margin: 0;
 }
 
+#input-container {
+    display: block;
+}
 #main {
     
-    overflow: hidden;
-    position: absolute;
-    width: 99%;
-    height: 99%;
+    max-width: 1024px;
+    max-height: 1024px;
+    margin: 3rem auto;
+
     display: flex;
     justify-content: center;
     align-items: center;
