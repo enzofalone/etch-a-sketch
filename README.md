@@ -1,2 +1,2 @@
 # etch-a-sketch
-own solution for the Etch-A-Sketch assignment made by The Odin Project
+inspired by The Odin Project's curriculum!
